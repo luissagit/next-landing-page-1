@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.btn-pink {
+	@apply px-4 py-2 bg-pink text-white rounded-full border-pink border-2;
+}
+
+.btn-blue {
+	@apply px-4 py-2 bg-secondary-100 text-white rounded-full border-secondary-100 border-2;
+}
+
+.btn-blue:hover {
+	@apply bg-white text-secondary-100;
+}
+
+.btn-pink:hover {
+	@apply bg-white text-pink;
+}
+
+.first:first-letter {
+	@apply capitalize;
+}
