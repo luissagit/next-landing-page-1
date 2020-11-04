@@ -11,7 +11,7 @@ function Product({ product }) {
 
 
 	return(
-		<div className="rounded-2xl text-primary-100 bg-white p-4">
+		<div className="rounded-2xl text-primary-100 bg-white p-4 md:mx-4">
 			<div className="text-4xl font-bold">
 				${ price }
 			</div>
@@ -26,7 +26,7 @@ function Product({ product }) {
 					{
 						features.map((feature, index) => {
 							return(
-								<li key={index} className="flex mt-1 items-center">
+								<li key={index} className="flex mt-2 items-center">
 									<span className={setBg(index)}>
 										<svg className="w-5 h-5" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
 									</span>
