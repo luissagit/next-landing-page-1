@@ -6,7 +6,7 @@ function Layout({ children }) {
 			<header>
 				<Header />
 			</header>
-			<main className="py-4 px-6">
+			<main className="py-4">
 				{ children }
 			</main>
 			<footer>

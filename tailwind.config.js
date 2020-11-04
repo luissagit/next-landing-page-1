@@ -31,7 +31,8 @@ module.exports = {
           "200": "#78C2FF"
         },
         pink: "#FF3E81",
-        bg: "#FBFBFB"
+        bg: "#FBFBFB",
+        bg2: "#F9F9F9"
       },
       fontFamily: {
         round: ['Varela Round', 'sans serif'],

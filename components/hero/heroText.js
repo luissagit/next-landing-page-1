@@ -3,15 +3,15 @@ function HeroText({ detail }) {
 
 	return(
 		<div className="text-primary-100 text-center">
-			<div className="text-xl first">
+			<h3 className="text-xl first">
 				{ subtitle }
-			</div>
-			<div className="font-bold text-4xl first">
+			</h3>
+			<h2 className="font-bold text-4xl first">
 				{ title }
-			</div>
-			<div className="font-light first">
+			</h2>
+			<p className="font-light first">
 				{ description }
-			</div>
+			</p>
 			{
 				buttons.map((button, index) => {
 					return(

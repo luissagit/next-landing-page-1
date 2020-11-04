@@ -3,6 +3,7 @@ import Layout from '../components/layout';
 import Head from 'next/head'
 import Hero from '../components/hero';
 import Features from '../components/features';
+import Pricing from '../components/pricing';
 
 function Home() {
 	const [forHero, setForHero] = useState({
@@ -41,12 +42,13 @@ function Home() {
 			<Head>
 				<title>code.</title>
 			</Head>
-			<div>
+			<div className="px-6">
 				<Hero hero={forHero.first} />
 				<Features />
 				<Hero hero={forHero.second} />
 				<Hero hero={forHero.third} />
 			</div>
+			<Pricing />
 		</Layout>
 	);
 }
