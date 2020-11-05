@@ -11,14 +11,14 @@ function Product({ product }) {
 
 
 	return(
-		<div className="rounded-2xl text-primary-100 bg-white p-4 md:mx-4">
+		<div className="rounded-2xl text-primary-100 bg-white p-4 mx-2 md:mx-4">
 			<div className="text-4xl font-bold">
 				${ price }
 			</div>
-			<h4 className="text-secondary-100 text-xl font-semibold">
+			<h4 className="text-secondary-100 text-xl font-semibold first">
 				{ name }
 			</h4>
-			<p className="text-primary-100 text-md font-light">
+			<p className="text-primary-100 text-md font-light first">
 				{ description }
 			</p>
 			<div className="grid place-content-center">
@@ -30,7 +30,7 @@ function Product({ product }) {
 									<span className={setBg(index)}>
 										<svg className="w-5 h-5" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
 									</span>
-									<span>
+									<span className="first">
 										{feature.name}
 									</span>
 								</li>

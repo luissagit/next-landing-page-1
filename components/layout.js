@@ -1,4 +1,5 @@
 import Header from './header';
+import Footer from './footer';
 
 function Layout({ children }) {
 	return(
@@ -6,11 +7,11 @@ function Layout({ children }) {
 			<header>
 				<Header />
 			</header>
-			<main className="py-4">
+			<main className="pt-4">
 				{ children }
 			</main>
 			<footer>
-				
+				<Footer />
 			</footer>
 		</div>
 	);
