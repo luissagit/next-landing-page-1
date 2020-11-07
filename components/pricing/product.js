@@ -39,7 +39,7 @@ function Product({ product }) {
 					}
 				</ul>
 			</div>
-			<button className="btn-blue first mt-4 font-body">
+			<button className="btn-blue first mt-4 font-body transition-default">
 				enquire
 			</button>
 		</div>

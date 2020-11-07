@@ -11,12 +11,14 @@ function Header() {
 	}
 
 	return(
-		<div>
-			<div className="py-3 px-4 flex justify-between border-b-2 items-center relative">
-				<Logo />
-				<MenuButton handleToggleMenu={() => handleToggleMenu()} isOpened={isOpened} />
+		<div className="py-3 px-4 border-b-2">
+			<div className="max-w-4xl mx-auto relative">
+				<div className="flex justify-between items-center">
+					<Logo />
+					<MenuButton handleToggleMenu={() => handleToggleMenu()} isOpened={isOpened} />
+					<Navbar isOpened={isOpened}/>
+				</div>
 			</div>
-			<Navbar isOpened={isOpened}/>
 		</div>
 	);
 }

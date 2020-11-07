@@ -16,7 +16,7 @@ function HeroText({ detail }) {
 				{
 					buttons.map((button, index) => {
 						return(
-							<button className={`${button.style} first`} key={index}>
+							<button className={`${button.style} first transition-default`} key={index}>
 								{ button.name }
 							</button>
 						);

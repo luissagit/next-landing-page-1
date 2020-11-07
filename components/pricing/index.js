@@ -64,24 +64,26 @@ function Pricing() {
 
 	return(
 		<div className="mt-4 text-primary-100 text-center bg-gray-200 p-4">
-			<h2 className="font-bold text-4xl first">
-				pricing
-			</h2>
-			<p className="font-light first">
-				offer multiple packages or monthly subscriptions? Why not showcase your featured price plans here, bold and beautifully.
-			</p>
-			<div className="mt-2 py-2 px-4">
-				<Slider {...settings}>
-					{
-						products.map((product, index) => {
-							return(
-								<div key={index}>
-									<Product product={product} />
-								</div>
-							)
-						})
-					}
-				</Slider>
+			<div className="max-w-4xl mx-auto">
+				<h2 className="font-bold text-4xl first">
+					pricing
+				</h2>
+				<p className="font-light first">
+					offer multiple packages or monthly subscriptions? Why not showcase your featured price plans here, bold and beautifully.
+				</p>
+				<div className="mt-2 py-2 px-4">
+					<Slider {...settings}>
+						{
+							products.map((product, index) => {
+								return(
+									<div key={index}>
+										<Product product={product} />
+									</div>
+								)
+							})
+						}
+					</Slider>
+				</div>
 			</div>
 		</div>
 	);

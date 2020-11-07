@@ -10,7 +10,7 @@ function Features() {
 	]);
 
 	return(
-		<div className="mt-4 grid gap-4 md:flex justify-between">
+		<div className="mt-4 grid gap-4 md:flex justify-between max-w-3xl mx-auto">
 			{
 				features.map((feature, index) => {
 					return <Feature feature={feature} key={index}/>
